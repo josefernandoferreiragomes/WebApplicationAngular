@@ -1,0 +1,12 @@
+<form class="example-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <div class="example-full-width formField">
+    <input class="inputClass" name="first" ngModel required #first="ngModel">
+    <input class="inputClass" name="last" ngModel>
+    <button>Submit</button>
+  </div>
+</form>
+
+<p>First name value: {{ first.value }}</p>
+<p>First name valid: {{ first.valid }}</p>
+<p>Form value: {{ f.value | json }}</p>
+<p>Form valid: {{ f.valid }}</p>

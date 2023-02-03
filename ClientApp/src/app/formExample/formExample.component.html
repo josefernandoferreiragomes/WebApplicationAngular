@@ -1,8 +1,16 @@
 <form class="example-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
   <div class="example-full-width formField">
+    <p></p>
+    <label class="labelClass marginleft marginTop" name="labelfirst">ZIP Code</label>
     <input class="inputClass" name="first" ngModel required #first="ngModel">
+    <span>-</span>
     <input class="inputClass" name="last" ngModel>
-    <button>Submit</button>
+
+    <p></p>
+    <label class="labelClass marginleft" name="labelDate">Date</label>
+    <input class="inputClass" type="date" ngModel name="dateinput" />
+    <p></p>
+    <button class="btn-primary marginleft">Submit</button>
   </div>
 </form>
 

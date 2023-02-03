@@ -17,31 +17,39 @@ code {
 /*example form*/
 .example-form {
   min-width: 150px;
-  max-width: 500px;
+  max-width: 900px;
+  min-height:200px;
   width: 100%;
+  background-color: antiquewhite;
 }
 
 .example-full-width {
   width: 100%;
 }
 
+/*marginleft*/
+.marginleft{
+    margin-left:10px;
+}
+
+.marginTop {
+  margin-top: 20px;
+}
 /*example form*/
-.example-form {
+/*.example-form {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
-}
-
+}*/
 .example-full-width {
   width: 100%;
 }
 
 .formField{
-    font-family:'Segoe UI';
-    background-color:antiquewhite;
+    font-family:'Segoe UI';    
     line-height:22px;
-    text-align:center;
-    align-self:center;
+    text-align:left;
+    align-self:flex-start;
     background-blend-mode:color;
 }
 .inputClass{

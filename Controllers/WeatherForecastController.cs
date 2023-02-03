@@ -35,5 +35,11 @@ namespace WebApplicationAngular.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost]
+        public SimpleFormExample Post(SimpleFormExample exampleIn)
+        {
+            return exampleIn;
+        }
     }
 }

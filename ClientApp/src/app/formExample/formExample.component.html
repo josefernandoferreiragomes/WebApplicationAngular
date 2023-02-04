@@ -1,23 +1,29 @@
+<h1 id="tableLabel">Weather forecast Calculate</h1>
+
+<p>This component demonstrates sending and fetching data from the server.</p>
+
 <form class="example-form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
   <div class="example-full-width formField">
     <p></p>
-    <label class="labelClass marginleft marginTop" name="labelfirst">ZIP Code</label>
-    <input class="inputClass" name="first" ngModel required #first="ngModel">
+    <label class="labelClass marginleft marginTop" name="labelfirst">Hours interval:</label>
+    <input class="inputClass" name="firstHour" ngModel required #firstHour="ngModel">
     <span>-</span>
-    <input class="inputClass" name="last" ngModel>
+    <input class="inputClass" name="lastHour" ngModel>
 
     <p></p>
     <label class="labelClass marginleft" name="labelDate">Date</label>
-    <input class="inputClass" type="date" ngModel name="dateinput" />
+    <input class="inputClass" type="date" ngModel name="dateInput" />
     <p></p>
     <button class="btn-primary marginleft">Submit</button>
     <p></p>
-    <label class="labelClass marginleft" name="labelResponse">Server Response:</label>
-    <input class="labelClass marginleft" name="resultResponse" ngModel/>
+    <label class="labelClass marginleft" name="labelResponse">Forecast:</label>
+    <input class="labelClass marginleft" name="resultResponse" ngModel />
   </div>
 </form>
-
-<p>First name value: {{ first.value }}</p>
-<p>First name valid: {{ first.valid }}</p>
-<p>Form value: {{ f.value | json }}</p>
-<p>Form valid: {{ f.valid }}</p>
+<div class="technicalFields">
+  <p>Technical test fields</p>
+  <p>First hour value: {{ firstHour.value }}</p>
+  <p>First hour valid: {{ firstHour.valid }}</p>
+  <p>Form value: {{ f.value | json }}</p>
+  <p>Form valid: {{ f.valid }}</p>
+</div>

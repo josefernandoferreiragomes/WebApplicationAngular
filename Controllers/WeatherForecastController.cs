@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace WebApplicationAngular.Controllers
 {
@@ -37,12 +36,18 @@ namespace WebApplicationAngular.Controllers
         }
 
         [HttpPost]
-        public SimpleFormExample Post(SimpleFormExample exampleIn)
+        public SimpleWeatherCalculate Post(SimpleWeatherCalculate exampleIn)
         {
-            exampleIn.Dateinput = "2023-01-01";
-            exampleIn.First = "first from mvc";
-            exampleIn.Last = "last from mvc";
-            return exampleIn;
+            //TODO Process input and then provide forecast
+            //will use mock response
+            SimpleWeatherCalculate response = new SimpleWeatherCalculate();
+
+            response.DateInput = exampleIn.DateInput;
+            response.FirstHour = exampleIn.FirstHour;
+            response.LastHour = exampleIn.LastHour;
+            response.ResultResponse = String.Format("the weeather will be sunny from {0} to {1}, {2}", exampleIn.FirstHour, exampleIn.LastHour, exampleIn.DateInput);
+
+            return response;
         }
     }
 }

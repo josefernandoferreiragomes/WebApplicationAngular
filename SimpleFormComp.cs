@@ -2,13 +2,14 @@ using System;
 
 namespace WebApplicationAngular
 {
-    public class SimpleFormExample
+    public class SimpleWeatherCalculate
     {
-        public string First { get; set; }
+        public string FirstHour { get; set; }
 
-        public string Last { get; set; }
+        public string LastHour { get; set; }
 
-        public string Dateinput { get; set; }
+        public string DateInput { get; set; }
 
+        public string ResultResponse { get; set; }
     }
 }

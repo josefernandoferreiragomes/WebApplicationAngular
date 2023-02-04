@@ -39,6 +39,9 @@ namespace WebApplicationAngular.Controllers
         [HttpPost]
         public SimpleFormExample Post(SimpleFormExample exampleIn)
         {
+            exampleIn.Dateinput = "2023-01-01";
+            exampleIn.First = "first from mvc";
+            exampleIn.Last = "last from mvc";
             return exampleIn;
         }
     }

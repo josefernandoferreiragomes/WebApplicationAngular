@@ -10,7 +10,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { EditComponent } from './Edit/edit.component';
+import { SumComponent } from './Sum/sum.component';
 import { SimpleFormComp } from './formExample/formExample.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 
@@ -20,7 +20,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    EditComponent,
+    SumComponent,
     FetchDataComponent,
     SimpleFormComp,
     ProfileEditorComponent
@@ -33,7 +33,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
-      { path: 'edit', component: EditComponent },
+      { path: 'edit', component: SumComponent },
       { path: 'formExample', component: SimpleFormComp },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'profile-editor', component: ProfileEditorComponent },

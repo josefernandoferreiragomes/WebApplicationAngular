@@ -1,0 +1,22 @@
+<h1>Sum</h1>
+
+<p>This is a simple example of an Angular component with two form fields added.</p>
+
+<p aria-live="polite">Current sum: <strong>{{ currentCount }}</strong></p>
+
+<button class="btn btn-primary" (click)="performSum()">Increment</button>
+
+<p>
+
+</p>
+<form class="example-form">
+  <div class="example-full-width formField">
+    <label>First Value</label>
+    <input name="firstNumber" [(ngModel)]="firstNumber" class="inputClass" id="firstNumber" placeholder="Ex. 1"  >
+  </div>
+
+  <div class="example-full-width formField">
+    <label>Second Value</label>
+    <input class="inputClass" [(ngModel)]="secondNumber" placeholder="Ex. 2" ngModel id="secondNumber" name="secondNumber"/>
+  </div>
+</form>

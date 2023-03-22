@@ -12,3 +12,6 @@ Functionalities added as exercise:
 -> Sum menu option
 	sum two numbers
 	perform rename to page, folder, and files
+
+-> Next themes
+	Create client profile creator flow, with different pages
